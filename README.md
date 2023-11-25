@@ -41,7 +41,8 @@ Give the Input Combinations according to the Truth Table amd then simulate the O
 /*
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 Developed by: DHARSHAN D
-RegisterNumber:  23001663
+RegisterNumber:  23001663/*
+```
 module combinationalcircuits(A,B,C,D,F1);
 input A,B,C,D;
 output F1;
@@ -57,7 +58,7 @@ assign A4=Abar&B&C&D;
 assign A5=B&Cbar&D;
 assign F1=A1|A2|A3|A4|A5;
 endmodule
-/*
+```
 ## RTL realization
 ![RTL](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/7e8a578a-e567-46cd-9497-64a12b2d44cc)
 
