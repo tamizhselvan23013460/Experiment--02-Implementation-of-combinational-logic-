@@ -12,7 +12,6 @@ Logic gates are electronic circuits which perform logical functions on one or mo
 ## Logic Diagram (using nand gate) and (using nor gate):
 ![Screenshot 2023-11-25 210856](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/112dff2e-a385-4bc3-b729-cf51cade9356)
 ![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/78ec00f6-e5c3-47af-9e8c-05218f9324fb)
-
 ## Procedure
 *Create a project with required entities.
 *Create a module along with respective file name.
