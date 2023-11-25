@@ -43,7 +43,7 @@ endmodule
 ```
 ## OUTPUT:
 ## RTL realization of NAND AND NOR gates:
-![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/c3e26394-ec7c-4035-812e-470cafab2bd0)
+![Screenshot 2023-11-25 211738](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/4924c21c-22b0-4dcd-ae8f-50a3a8a9cd62)
 ## Truthtable of NAND gate:
 ![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/c327631d-3264-43be-8096-82067ac75a60)
 ## Truthtable of NOR gate:
