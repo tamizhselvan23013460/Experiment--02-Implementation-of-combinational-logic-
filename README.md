@@ -5,57 +5,51 @@ To implement the given logic function verify its operation in Quartus using Veri
  F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
 F2=xy’z+x’y’z+w’xy+wx’y+wxy
 ## Equipments Required:
-## Hardware – PCs, Cyclone II , USB flasher
-## Software – Quartus prime
-## Theory
-## Logic Diagram
+Hardware – PCs, Cyclone II , USB flasher
+Software – Quartus prime
+## Theory:
+Logic gates are electronic circuits which perform logical functions on one or more inputs to produce one output.
+## Logic Diagram (using nand gate) and (using nor gate):
+![Screenshot 2023-11-25 210856](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/112dff2e-a385-4bc3-b729-cf51cade9356)
+![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/78ec00f6-e5c3-47af-9e8c-05218f9324fb)
+
 ## Procedure
-1)Create a New Project:
-Open Quartus and create a new project by selecting "File" > "New Project Wizard."
-Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
-2)Create a New Design File:
-Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
-Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
-3)Write the Combinational Logic Code:
-Open the newly created Verilog or VHDL file and write the code for your combinational logic.
-4)Compile the Project:
-To compile the project, click on "Processing" > "Start Compilation" in the menu.
-Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
-5)Analyze and Fix Errors:*
-If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
-Review and fix any issues in your code if necessary.
-View the RTL diagram.
-6)Verification:
-Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
-Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
-Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
+*Create a project with required entities.
+*Create a module along with respective file name.
+*Run the respective programs for the given boolean equations.
+*Run the module and get the respective RTL outputs.
+*Create university program(VWF) for getting timing diagram.
+*Give the respective inputs for timing diagram and obtain the results.
 ## Program:
-/*
+```
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 Developed by: DHARSHAN D
-RegisterNumber:  23001663/*
-```
-module combinationalcircuits(A,B,C,D,F1);
-input A,B,C,D;
-output F1;
-wire Abar,Bbar,Cb,Db,A1,A2,A3,A4,A5;
-assign Abar=~A;
-assign Bbar=~B;
-assign Cbar=~C;
-assign Dbar=~D;
-assign A1=Abar&Bbar&Cbar&Dbar;
-assign A2=A&Cbar&Dbar;
-assign A3=Bbar&C&Dbar;
-assign A4=Abar&B&C&D;
-assign A5=B&Cbar&D;
-assign F1=A1|A2|A3|A4|A5;
+RegisterNumber: 23001663
+module combinational(a,b,c,d,w,x,y,z,fl,f2);
+input a,b,c,d,w,x,y,z;
+output fl,f2;
+wire g1=((~a)&(~b)&(~c)&(~d)); 
+wire g2=((a)&(~c)&(~d));
+wire g3=((~b)&(c)&(~d));
+wire g4=((~a)&(b)&(c)&(d)); 
+wire g5=((b)&(~c)&(d));
+assign fl=g1|g2|g3|g4|g5; 
+wire g6=((x)&(~y)&(z));
+wire g7=((~x)&(~y)&(z));
+wire g8=((~w)&(x)&(y)); 
+wire g9=((w)&(~x)&(y));
+wire g10=((w)&(x)&(y)); 
+assign f2=g6|g7|g8|g9|g10;
 endmodule
 ```
-## RTL realization
-![RTL](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/7e8a578a-e567-46cd-9497-64a12b2d44cc)
-## Truthtable:
-![truthtable](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/329c070f-7dde-40d4-9ee1-4be0bf4753e6)
+## OUTPUT:
+## RTL realization of NAND AND NOR gates:
+![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/c3e26394-ec7c-4035-812e-470cafab2bd0)
+## Truthtable of NAND gate:
+![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/c327631d-3264-43be-8096-82067ac75a60)
+## Truthtable of NOR gate:
+![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/d148d3ff-a33b-49a7-9266-9524edaaccae)
 ## Timing Diagram:
-![waveform](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/81fdb346-6e3a-4952-bb73-23eb0c3cb9a1)
+![image](https://github.com/dharshan7200/Experiment--02-Implementation-of-combinational-logic-/assets/138850116/b79fbc34-a5df-42fa-83d5-c5fae61a7864)
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
