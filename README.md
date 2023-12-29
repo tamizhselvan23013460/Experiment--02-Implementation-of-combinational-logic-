@@ -22,8 +22,8 @@ Logic gates are electronic circuits which perform logical functions on one or mo
 ## Program:
 ```
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
-Developed by: DHARSHAN D
-RegisterNumber: 23001663
+Developed by: TAMIZHSELVAN B
+RegisterNumber: 23013460
 module combinational(a,b,c,d,w,x,y,z,fl,f2);
 input a,b,c,d,w,x,y,z;
 output fl,f2;
