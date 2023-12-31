@@ -17,11 +17,11 @@ Software – Quartus prime
 *Give the respective inputs for timing diagram and obtain the results.
 ```
 ## Program:
-
+```
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 Developed by: TAMIZHSELVAN B
 RegisterNumber: 23013460
-
+```
 ![combina pro](https://github.com/tamizhselvan23013460/Experiment--02-Implementation-of-combinational-logic-/assets/150231370/e56244bf-dc47-4028-97d9-8c2a8fe49600)
 
 # OUTPUT:
