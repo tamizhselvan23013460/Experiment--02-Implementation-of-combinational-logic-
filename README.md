@@ -8,12 +8,14 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 Hardware – PCs, Cyclone II , USB flasher
 Software – Quartus prime
 # Procedure:
+```
 *Create a project with required entities.
 *Create a module along with respective file name.
 *Run the respective programs for the given boolean equations.
 *Run the module and get the respective RTL outputs.
 *Create university program(VWF) for getting timing diagram.
 *Give the respective inputs for timing diagram and obtain the results.
+```
 ## Program:
 ```
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
